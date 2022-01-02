@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --purple-dark: #170312;
+	--purple-medium: #33032d;
+    --purple-light: #531253;
+    --gray-light: #ebe7e7;
+    --white: #f4fffd;
+}
+body {
+	font-size: 20px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+p {
+	font-size: 20px;
+    color: var(--purple-dark);
+}
+
+/* header */
+
+.contenido-header{
+    width: 100%;
+    height: 100vh;
+    /*
+    background-image: url(./pagina-para-joyeria-con-parallax-imagenes/img/bg-girl.jpeg);
+    */
+    background-image: url(joya.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.contenido-header .fondo{
+    width: 0%;
+    height: 100%;
+    max-width: 100%;
+    background-image: url(./pagina-para-joyeria-con-parallax-imagenes/img/bg-top.png);
+}
+.contenido-header h1{
+width: 100vw ;
+height: 100vh;
+font-size: 50px;
+font-weight: 200;
+background: rgba(0, 0, 0, .9);
+font-family: Cambria;
+font-style: italic;
+display: flex;
+align-items: center;
+justify-content: center;
+color: var(--gray-light);
+mix-blend-mode: multiply;
+text-transform: uppercase;
+}
+/* 
+menu 
+*/
+.menu{
+    background-color: var(--purple-dark);
+    width: 100%;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    z-index: 999;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 60px;
+    
+}
+.menu a{
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    transition: .3 ease all;
+}
+.menu a:hover{
+    color: wheat;
+}
+.nosotros{
+    margin-bottom: 60px;
+}
+.subtitulo{
+    font-size: 18px;
+    font-weight: 700;
+    z-index: 2;
+    color: var(--purple-medium);
+    margin-bottom: 20px;
+   
+}
+.subtitulo span{
+    background-color: wheat;
+    padding: 0 15px;
+    z-index: 99;
+    position: relative;
+}
+.subtitulo::after{
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 100%;
+    background: var(--purple-medium);
+    position: relative;
+    top: -29px;
+    z-index: 1;
+}
+ .nosotros .titulo{
+    width: 70%;
+    font-size: 45px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 50px;
+    color: var(--purple-dark);
+}
+.nosotros .enlace{
+    display: inline-block;
+    margin-top: 40px;
+    color: var(--purple-light);
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: .3s ease all;
+}
+.nosotros .enlace:hover{
+    color: var(--purple-light);
+    letter-spacing: 3px;
+    border-bottom: 1px solid var(--purple-light);
+}
+
+/* 
+PRODUCTOS 
+*/
+.productos{
+    background: var(--gray-light);
+    padding: 20px;
+    margin-bottom: 60px;
+}
+.productos .titulo{
+    width: 70%;
+    font-size: 45px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 50px;
+    color: var(--purple-dark);
+}
+.productos .producto{
+    position: relative;
+    width: 100%;
+}
+.productos .overlay{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--purple-dark);
+    overflow: hidden;
+    transition: .5s ease all;
+
+}
+.productos .producto:hover .overlay{
+    width: 100%;
+    opacity: 95%;
+}
+.productos .producto .overlay-texto{
+top: 50%;
+left: 50%;
+position: absolute;
+white-space: nowrap;
+color: wheat;
+font-size: 15px;
+transform: translate(-50%,-50%);
+overflow: hidden;
+}   
+.productos .btn-productos {
+    display: block;
+    background: var(--purple-dark);
+    color: wheat;
+    width: 300px;
+    padding: 7px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    border: none;
+    transition: .3s ease;
+
+}
+.productos .btn-productos:hover{
+    background: transparent;
+    border: 2px solid var(--purple-dark);
+    color: var(--purple-medium);
+    font-weight: bolder;
+}
+/* 
+SEPARADOR
+*/
+.separador{
+    width: 100%;
+    height: 250px;
+    background-image: url(joyas5.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 60px;
+}
+.separador p{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: cursive;
+    font-size: 28px;
+    padding: 10px;
+    color: wheat;
+    background: rgba(0, 0, 0, .7);
+}
+/*
+ACERCA DE 
+*/
+.acerca-de {
+	margin-bottom: 60px;
+}
+.acerca-de p{
+    font-size: 18px;
+}
+/*
+GALERIA
+*/
+.galeria {
+	margin-bottom: 60px;
+}
+
+.galeria img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+/*
+CONTACTO
+*/
+.contacto {
+	margin-bottom: 60px;
+}
+.telf{
+    width: 350px;
+}
+.telf img{
+    height: 50px;
+    transition: .3s ease all;
+}
+.telf img:hover{
+    height: 55px;
+}
+.telf p{
+    font-size: 18px;
+    font-family: cursive;
+    color: var(--purple-light);
+    transition: .3s ease all;
+}
+.telf p:hover {
+letter-spacing: 2px;
+}
+/* 
+REDES  SOCIALES
+*/
+.redes-sociales {
+	padding: 10px;
+	background-color: var(--purple-dark);
+}
+
+.redes-sociales img {
+	padding: 5px;
+	border-radius: 100%;
+	width: 50px;
+	transition: .3s ease all;
+}
+
+.redes-sociales img:hover {
+	transform: scale(1.2);
+}
+@media screen and (max-width:785px) {
+   .separador p{
+       font-size: 20px;
+   }
+}
+@media screen and (max-width:570px) {
+    p{
+        font-size: 18px;
+    }
+    .separador p{
+        font-size: 15px;
+    }
+    .nosotros .titulo,
+	.productos .titulo {
+		font-size: 35px;
+	}
+    .productos .producto .overlay-texto{
+        font-size: 12px;
+    }
+    .telf p{
+        font-size: 15px;
+    }
+    .telf img{
+        font-size: 20px;
+    }
+    .telf img{
+        font-size: 25px;
+    }
+   
+   
+ }
+ @media screen and (max-width:390px) {
+    .menu a{
+        font-size: 14px;
+    }
+    p{
+        font-size: 15px;
+    }
+    .subtitulo{
+        font-size: 15px;
+    }
+    .contenido-header h1{
+        font-size: 25px;
+    }
+    .nosotros .titulo,
+	.productos .titulo {
+		font-size: 30px;
+	}
+    .productos .btn-productos{
+        width: 200px;
+    }
+    .productos .producto .overlay-texto{
+        font-size: 10px;
+    }
+    .nosotros .enlace{
+        font-size: 12px;
+    }
+ }
+ @media screen and (max-width:300px) {
+    
+    .separador p{
+        font-size: 12px;
+    }
+    .menu a{
+        font-size: 12px;
+    }
+ }
