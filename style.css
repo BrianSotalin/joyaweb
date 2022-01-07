@@ -82,6 +82,15 @@ menu
 .menu a:hover{
     color: wheat;
 }
+.menu .claro{
+    display: none;
+}
+.menu .oscuro{
+    font-weight: bolder;
+}
+/*
+NOSOTROS
+*/
 .nosotros{
     margin-bottom: 60px;
 }
@@ -131,6 +140,10 @@ menu
     letter-spacing: 3px;
     border-bottom: 1px solid var(--purple-light);
 }
+
+/*
+SWITCH
+*/
 
 /* 
 PRODUCTOS 
@@ -284,6 +297,59 @@ REDES  SOCIALES
 .redes-sociales img:hover {
 	transform: scale(1.2);
 }
+/*
+DARK-MODE
+*/
+body.dark{
+    background: var(--purple-dark);
+}
+body.dark p{
+    color: var(--gray-light);
+}
+body.dark .claro{
+    display: block;
+    font-weight: bolder;
+}
+body.dark .oscuro{
+    display: none;
+}
+body.dark .menu{
+    background: var(--gray-light);
+}
+body.dark .menu a{
+    color: var(--purple-dark);
+    font-weight: bold;
+    transition: .3s ease all;
+}
+body.dark .menu a:hover{
+    color: var(--purple-light);
+}
+body.dark .subtitulo{
+    color: wheat;
+ 
+}
+body.dark  .subtitulo span{
+ 
+    background: var(--purple-dark);
+}
+body.dark .subtitulo::after{
+    background: wheat;
+}
+body.dark .nosotros .titulo{
+    color: wheat;
+}
+body.dark .productos p{
+    color: var(--gray-dark);
+}
+body.dark .enlace{
+    color: wheat;
+}
+body.dark .enlace:hover{
+    color: wheat;
+    border-bottom: 1px solid wheat;
+}
+
+
 @media screen and (max-width:785px) {
    .separador p{
        font-size: 20px;
@@ -292,6 +358,10 @@ REDES  SOCIALES
 @media screen and (max-width:570px) {
     p{
         font-size: 18px;
+    }
+    .menu a{
+        font-size: 15px;
+        padding: 10px 15px;
     }
     .separador p{
         font-size: 15px;
@@ -318,6 +388,7 @@ REDES  SOCIALES
  @media screen and (max-width:390px) {
     .menu a{
         font-size: 14px;
+        padding: 5px 10px;
     }
     p{
         font-size: 15px;

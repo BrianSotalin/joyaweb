@@ -9,3 +9,16 @@ window.onscroll = () => {
  
 
 }
+
+const btnSwitch2 = document.querySelector('#op-uno');
+
+btnSwitch2.addEventListener('click', () => {
+	document.body.classList.toggle('dark');//toggle agrega una clase si no tiene y la elimina si ya la tiene
+	btnSwitch.classList.toggle('active');
+});
+const cambio= document.querySelector('#op-dos');
+
+cambio.addEventListener('click', () => {
+	document.body.classList.toggle('dark');//toggle agrega una clase si no tiene y la elimina si ya la tiene
+	btnSwitch.classList.toggle('active');
+});
