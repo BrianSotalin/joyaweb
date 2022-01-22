@@ -13,6 +13,7 @@
 body {
 	font-size: 20px;
 	font-family: 'Open Sans', sans-serif;
+    transition: .3s ease all;
 }
 
 p {
@@ -292,6 +293,9 @@ REDES  SOCIALES
 	border-radius: 100%;
 	width: 50px;
 	transition: .3s ease all;
+}
+.redes-sociales i{
+    color: wheat;
 }
 
 .redes-sociales img:hover {
