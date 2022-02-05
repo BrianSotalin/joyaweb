@@ -289,7 +289,7 @@ REDES  SOCIALES
 }
 
 .redes-sociales img {
-	padding: 5px;
+	padding: 5px 10px;
 	border-radius: 100%;
 	width: 50px;
 	transition: .3s ease all;
@@ -300,6 +300,18 @@ REDES  SOCIALES
 
 .redes-sociales img:hover {
 	transform: scale(1.2);
+}
+footer .link{
+    padding: 5px 20px;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 400;
+    color: var(--gray-light);
+    transition: .3s ease all;
+}
+footer .link:hover{
+    letter-spacing: 2px;
 }
 /*
 DARK-MODE
